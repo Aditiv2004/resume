@@ -193,7 +193,7 @@ section{
    filter: drop-shadow(0 0 10px #db3f3f);
 }
 .content button{
-    width: 50%;
+    width: 100%;
     height: 6vh;
     margin: 30px;
     background-color: #db3f3f;
@@ -212,6 +212,7 @@ section{
     color: #db3f3f;
     font-weight: 700;
     box-shadow: 0 0 40px #db3f3f;
+  
 }
  
 @media(max-width:884px){
@@ -280,14 +281,22 @@ section{
 .about {
     overflow: hidden;
     padding: 50px;
+    
+    
+   
 }
 
-.about-content {
-    display: flex;
+.about-container {
+    
     align-items: center;
     justify-content: center;
     gap: 20px;
     max-width: 800px;
+    padding: 100px;
+    margin-top: 1000px;
+    padding: 500px 20px;
+    
+  
     
    
    
@@ -295,12 +304,13 @@ section{
 }
 .about-container {
     background-color: white;
-    padding: 30px;
+    padding:30px;
     width: 70%;
     height: 60%;
-    margin:  auto;
+    margin: auto;
     border-radius: 10px;
-    
+    margin-top: 100px;
+   
     box-shadow: 0px 5px 10px rgba(202, 48, 48, 0.1);
 }
 /* Headings */
@@ -308,13 +318,14 @@ h1 {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
+    color: #db3f3f;
 }
 
-h2 {
-    font-size: 22px;
+.about-container h2 {
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: rgb(2, 2, 2);
+    color:#222
     
 }
 
@@ -326,6 +337,10 @@ h2 {
     color: #db3f3f;
 }
 
+h2{
+    color: #db3f3f;
+    font-size: 28px;
+}
 .projects {
     text-align: center;
     padding: 50px 20px;
@@ -346,6 +361,7 @@ h2 {
     width: 300px;
     text-align: center;
     transition: transform 0.3s;
+    margin-top: 10px;
 }
 
 
@@ -363,7 +379,7 @@ h2 {
 
 .project-card p {
     font-size: 14px;
-    color: gray;
+    color: black;
     margin: 10px 0;
 }
 
@@ -380,23 +396,31 @@ h2 {
 .github-btn:hover {
     background: #007a7a;
 }
+/* skill section css */
+
 .skills {
     text-align: center;
     padding: 50px 20px;
     background: #007a7a;
+    padding: 200px 20px;
+    
+ 
+    
    
 }
 
 .skills h2 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 10px;
+   
 }
 
 .skills-container {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
+ 
    
     
    
@@ -405,9 +429,10 @@ h2 {
 .skill-card {
     background: white;
     padding: 20px;
-    border-radius: 20 40 60 80px;
+    border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 10px;
     
 }
 
@@ -423,15 +448,17 @@ h2 {
     font-weight: bold;
     margin-top: 10px;
 }
+/* contact */
 .contact {
-    background: black;
+    background:#007a7a;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 200px 10px;
+  
 }
 
 .contact h2 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -447,10 +474,11 @@ form {
 input, textarea {
     width: 100%;
     padding: 12px;
-    background: #222;
+    background: white;
+
     border: none;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 16px;
 }
 
@@ -460,17 +488,29 @@ textarea {
 }
 
 button {
-    background: white;
-    color: black;
+    width: 50%;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px 110px;
+    background: #db3f3f;
+    color: white;
     padding: 12px;
-    border: none;
-    font-size: 16px;
+    border: #db3f3f;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 5px;
+    
 }
 
 button:hover {
-    background: #ddd;
+    scale: 1.1;
+    background-color: transparent;
+   border: 2px solid #db3f3f;
+    color: #db3f3f;
+    font-weight: 700;
+    box-shadow: 0 0 40px #db3f3f;
 }
 .social-icons {
     display: flex;
